@@ -1,6 +1,5 @@
 #' Test for Equality of Two Distributions by Biswas and Ghosh (2014)
 #' 
-#'
 #' Given two samples (either univariate or multivariate) \eqn{X} and \eqn{Y} of same dimension, it tests
 #' \deqn{H_0 : F_X = F_Y\quad vs\quad H_1 : F_X \neq F_Y}
 #' using the procedure by Biswas and Ghosh (2014) in a nonparametric way based on 
@@ -34,8 +33,8 @@
 #' pval.p = rep(0,ntest)
 #' 
 #' for (i in 1:ntest){
-#'   x = rnorm(100)
-#'   y = rnorm(100, sd=1.3)
+#'   x = matrix(rnorm(100), nrow=5)
+#'   y = matrix(rnorm(100), nrow=5)
 #'   
 #'   pval.a[i] = ifelse(eqdist.2014BG(x,y,method="a")$p.value<0.05,1,0)
 #'   pval.p[i] = ifelse(eqdist.2014BG(x,y,method="p",nreps=100)$p.value <0.05,1,0)
