@@ -4,8 +4,12 @@
 \alias{unif.2017YMi}
 \title{Multivariate Test of Uniformity based on Interpoint Distances by Yang and Modarres (2017)}
 \usage{
-unif.2017YMi(X, type = c("Q1", "Q2", "Q3"), lower = rep(0, ncol(X)),
-  upper = rep(1, ncol(X)))
+unif.2017YMi(
+  X,
+  type = c("Q1", "Q2", "Q3"),
+  lower = rep(0, ncol(X)),
+  upper = rep(1, ncol(X))
+)
 }
 \arguments{
 \item{X}{an \eqn{(n\times p)} data matrix where each row is an observation.}
@@ -19,7 +23,7 @@ unif.2017YMi(X, type = c("Q1", "Q2", "Q3"), lower = rep(0, ncol(X)),
 \value{
 a (list) object of \code{S3} class \code{htest} containing: \describe{
 \item{statistic}{a test statistic.}
-\item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+\item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 \item{alternative}{alternative hypothesis.}
 \item{method}{name of the test.}
 \item{data.name}{name(s) of provided sample data.}
@@ -51,10 +55,10 @@ for (i in 1:niter){
 }
 
 ## print the result
-cat(paste("\\n* Example for 'unif.2017YMi'\\n\\n",
-sprintf("* Type 1 error with Q1 : \%.4f\\n", sum(rec1/niter)),
-sprintf("*                   Q2 : \%.4f\\n", sum(rec2/niter)),
-sprintf("*                   Q3 : \%.4f\\n", sum(rec3/niter)),sep=""))
+cat(paste("\n* Example for 'unif.2017YMi'\n","*\n",
+"* Type 1 error with Q1 : ", round(sum(rec1/niter),5),"\n",
+"*                   Q2 : ", round(sum(rec2/niter),5),"\n",
+"*                   Q3 : ", round(sum(rec3/niter),5),"\n",sep=""))
 }
 
 }

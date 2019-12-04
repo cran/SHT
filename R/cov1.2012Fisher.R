@@ -12,7 +12,7 @@
 #'
 #' @return a (list) object of \code{S3} class \code{htest} containing: \describe{
 #' \item{statistic}{a test statistic.}
-#' \item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+#' \item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 #' \item{alternative}{alternative hypothesis.}
 #' \item{method}{name of the test.}
 #' \item{data.name}{name(s) of provided sample data.}
@@ -35,9 +35,9 @@
 #' }
 #' 
 #' ## print the result
-#' cat(paste("\n* Example for 'cov1.2012Fisher'\n\n",
-#' sprintf("* empirical error with statistic 1 : %.4f\n", sum(counter1/niter)),
-#' sprintf("* empirical error with statistic 2 : %.4f\n", sum(counter2/niter)),sep=""))
+#' cat(paste("\n* Example for 'cov1.2012Fisher' \n","*\n",
+#' "* empirical error with statistic 1 : ", round(sum(counter1/niter),5),"\n",
+#' "* empirical error with statistic 2 : ", round(sum(counter2/niter),5),"\n",sep=""))
 #' }
 #' 
 #' @references 

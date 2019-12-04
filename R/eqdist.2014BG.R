@@ -13,7 +13,7 @@
 #' 
 #' @return a (list) object of \code{S3} class \code{htest} containing: \describe{
 #' \item{statistic}{a test statistic.}
-#' \item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+#' \item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 #' \item{alternative}{alternative hypothesis.}
 #' \item{method}{name of the test.}
 #' \item{data.name}{name(s) of provided sample data.}
@@ -41,10 +41,9 @@
 #' }
 #' 
 #' ## print the result
-#' cat(paste(
-#' sprintf("\n* EMPIRICAL TYPE 1 ERROR COMPARISON \n"),
-#' sprintf("* Asymptotics :  %.3f\n", sum(pval.a/ntest)),
-#' sprintf("* Permutation :  %.3f\n", sum(pval.p/ntest)),sep=""))
+#' cat(paste("\n* EMPIRICAL TYPE 1 ERROR COMPARISON \n","*\n",
+#' "* Asymptotics : ", round(sum(pval.a/ntest),5),"\n",
+#' "* Permutation : ", round(sum(pval.p/ntest),5),"\n",sep=""))
 #' }
 #' 
 #' @references 

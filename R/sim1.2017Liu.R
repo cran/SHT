@@ -10,7 +10,7 @@
 #'
 #' @return a (list) object of \code{S3} class \code{htest} containing: \describe{
 #' \item{statistic}{a test statistic.}
-#' \item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+#' \item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 #' \item{alternative}{alternative hypothesis.}
 #' \item{method}{name of the test.}
 #' \item{data.name}{name(s) of provided sample data.}
@@ -21,7 +21,7 @@
 #' smallX = matrix(rnorm(10*3),ncol=3)
 #' sim1.2017Liu(smallX) # run the test
 #' 
-#' \donttest{
+#' \dontrun{
 #' ## empirical Type 1 error 
 #' niter   = 1000
 #' counter = rep(0,niter)  # record p-values
@@ -31,10 +31,10 @@
 #' }
 #' 
 #' ## print the result
-#' cat(paste("\n* Example for 'sim1.2017Liu'\n\n",
-#' sprintf("* number of rejections   : %d\n",sum(counter)),
-#' sprintf("* total number of trials : %d\n",niter),
-#' sprintf("* empirical Type 1 error : %.4f\n", sum(counter/niter)),sep=""))
+#' cat(paste("\n* Example for 'sim1.2017Liu'\n","*\n",
+#' "* number of rejections   : ", sum(counter),"\n",
+#' "* total number of trials : ", niter,"\n",
+#' "* empirical Type 1 error : ",round(sum(counter/niter),5),"\n",sep=""))
 #' }
 #' 
 #' @references 

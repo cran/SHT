@@ -4,8 +4,7 @@
 \alias{norm.2008RJB}
 \title{Robust Jarque-Bera Test of Univariate Normality by Gel and Gastwirth (2008)}
 \usage{
-norm.2008RJB(x, C1 = 6, C2 = 24, method = c("asymptotic", "MC"),
-  nreps = 2000)
+norm.2008RJB(x, C1 = 6, C2 = 24, method = c("asymptotic", "MC"), nreps = 2000)
 }
 \arguments{
 \item{x}{a length-\eqn{n} data vector.}
@@ -21,7 +20,7 @@ norm.2008RJB(x, C1 = 6, C2 = 24, method = c("asymptotic", "MC"),
 \value{
 a (list) object of \code{S3} class \code{htest} containing: \describe{
 \item{statistic}{a test statistic.}
-\item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+\item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 \item{alternative}{alternative hypothesis.}
 \item{method}{name of the test.}
 \item{data.name}{name(s) of provided sample data.}

@@ -15,7 +15,7 @@ meank.2009ZX(dlist, method = c("L", "T"))
 \value{
 a (list) object of \code{S3} class \code{htest} containing: \describe{
 \item{statistic}{a test statistic.}
-\item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+\item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 \item{alternative}{alternative hypothesis.}
 \item{method}{name of the test.}
 \item{data.name}{name(s) of provided sample data.}
@@ -50,10 +50,10 @@ for (i in 1:niter){
 }
 
 ## print the result
-cat(paste("\\n* Example for 'meank.2009ZX'\\n\\n",
-sprintf("* number of rejections   : \%d\\n",sum(counter)),
-sprintf("* total number of trials : \%d\\n",niter),
-sprintf("* empirical Type 1 error : \%.4f\\n", sum(counter/niter)),sep=""))
+cat(paste("\n* Example for 'meank.2009ZX'\n","*\n",
+"* number of rejections   : ", sum(counter),"\n",
+"* total number of trials : ", niter,"\n",
+"* empirical Type 1 error : ",round(sum(counter/niter),5),"\n",sep=""))
 }
 
 

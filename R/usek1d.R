@@ -11,7 +11,7 @@
 #' 
 #' @return a (list) object of \code{S3} class \code{htest} containing: \describe{
 #' \item{statistic}{a test statistic.}
-#' \item{p.value}{\eqn{p}-value \eqn{P(H_0|H_1)} under current setting.}
+#' \item{p.value}{\eqn{p}-value under \eqn{H_0}.}
 #' \item{alternative}{alternative hypothesis.}
 #' \item{method}{name of the test.}
 #' \item{data.name}{name(s) of provided sample data.}
@@ -28,10 +28,10 @@
 #' test1 = usek1d(x, y, "meank.anova")
 #' test2 = mean2.ttest(x,y)
 #' 
-#' ### print the results of comparison
-#' cat(paste("\n* Comparison of ANOVA and t-test'\n\n",
-#' sprintf("* p-value from ANOVA   : %.4f\n",test1$p.value),
-#' sprintf("*              t-test  : %.4f\n",test2$p.value),sep=""))
+#' ## print the result
+#' cat(paste("\n* Comparison of ANOVA and t-test \n","*\n",
+#' "* p-value from ANOVA  : ", round(test1$p.value,5),"\n",
+#' "*              t-test : ", round(test2$p.value,5),"\n",sep=""))
 #' }
 #' 
 #' @export
