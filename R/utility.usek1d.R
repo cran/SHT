@@ -34,6 +34,7 @@
 #' "*              t-test : ", round(test2$p.value,5),"\n",sep=""))
 #' }
 #' 
+#' @concept utility
 #' @export
 usek1d <- function(x, y, test.name, ...){
   ##############################################################

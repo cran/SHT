@@ -37,6 +37,7 @@
 #' "* empirical Type 1 error : ",round(sum(counter/niter),5),"\n",sep=""))
 #' }
 #' 
+#' @concept utility
 #' @export
 useknd <- function(X, Y, test.name, ...){
   ##############################################################
