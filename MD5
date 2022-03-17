@@ -1,7 +1,7 @@
-5ab8d216fabe552d597bfe1b93aa62d0 *DESCRIPTION
+8731b401c713155bb7554a8ca25b9682 *DESCRIPTION
 346cee2351aae3dad0c120be0c94c202 *LICENSE
-c78aa23789029ef74680c3f8c35731c0 *NAMESPACE
-9a101da0375e71dcc78baa3d3fa5209f *NEWS.md
+cd78546c8ff14e2675e9803bbca6e000 *NAMESPACE
+6be78c5d9a2dc973293e5a2077d08d14 *NEWS.md
 c086350538ff52a704cfc2a21c46c394 *R/RcppExports.R
 0b693f4f59ffd0c29d3484628f391799 *R/aux_checkers.R
 bf240e98c76f18e4495e50ffaa18f817 *R/aux_class.R
@@ -9,7 +9,7 @@ bf240e98c76f18e4495e50ffaa18f817 *R/aux_class.R
 72787552c7d6f4f7b2ea381c361298cb *R/cov1.2012Fisher.R
 eb5372a87d514847fb4368d2e4607fec *R/cov1.2015WL.R
 6308a178804c940008da78d0e306c042 *R/cov1.mxPBF.R
-0220a775ef8474681ab127b5a4fecaad *R/cov2.2012LC.R
+96f36b3fe31a86c21274f815bee013be *R/cov2.2012LC.R
 a9ae15cf9e175638527cde2f38c5291c *R/cov2.2013CLX.R
 e6246e92bdb47a4c302d1e1d66ca5419 *R/cov2.2015WL.R
 bc5f526aa3cae4d85ee452987821d8d5 *R/cov2.mxPBF.R
@@ -30,9 +30,9 @@ d4301bfb2edc1fc99a179e82617eb6ed *R/mean2.1996BS.R
 a6d939054c291456edf0dcc4646c15ef *R/mean2.2004KY.R
 785cff3fc5805a3f1f67ba7e407adc30 *R/mean2.2008SD.R
 d6da77e7963ae48ffa4d1c9d700e2663 *R/mean2.2011LJW.R
-63271cb19d333f902ba14e6d6f2de582 *R/mean2.2014CLX.R
+d8f2c278f6b799af18e489efc01a8f3d *R/mean2.2014CLX.R
 9bcb8fb376969a4dd6f09146e623f274 *R/mean2.2014Thulin.R
-b3bbcf62fe9532c34c05351b4b9bd69c *R/mean2.mxPBF.R
+8015792fed3585ec6e7c72590313234a *R/mean2.mxPBF.R
 7600c4c985203d8bbf7035b7a5af7b0e *R/mean2.ttest.R
 421d02391df281c87abff382bf1787bb *R/meank.2007Schott.R
 8c24b2bb4c30b1824544fed052dcd389 *R/meank.2009ZX.R
@@ -52,6 +52,7 @@ bdc361ab924f4573886468666df1d82f *R/norm.1996AJB.R
 9b014beb1616c341b9170de0833ad8be *R/norm.2008RJB.R
 fa394d7ebcc446fb7ddd14df8363f59a *R/package-SHT.R
 cfa39ef275c6a0c87b92e78927158aab *R/sim1.2017Liu.R
+8fe71b60acd1d48696c809ec035b7888 *R/sim1.LRT.R
 54bfbc33c3f051f118edf72f147589a5 *R/sim2.2018HN.R
 d21ce42feebb7c9a4e8e6499bdf55325 *R/unif.2017YMi.R
 4fbb21dd2744a336978e47a80045f5f1 *R/unif.2017YMq.R
@@ -62,13 +63,13 @@ c6fe4b64b7c9ad0f53539036eacf5a38 *R/utility.useknd.R
 5f9a19ea627cff8fbd5df9a0c026ecdd *R/vark.1937Bartlett.R
 e1850ec9dc2d3e57205020dd6a5a5c09 *R/vark.1960Levene.R
 5698c1b04652e2be0677c3e101d606ca *R/vark.1974BF.R
-c28318ec3948988a26695f344e07e933 *R/zzz.R
+d254d20151e9dff23d6be72668b6492c *R/zzz.R
 70a59cc552a301772c3a071f14e20412 *R/zzz_test_edist.R
-97991adb1ec63a7f2d1d9723ddb2a864 *build/partial.rdb
+f79294617e10b33ce2be9a5e2744ae0c *build/partial.rdb
 d40c4d6854f2f484b9e98747abd4ccc6 *inst/REFERENCES.bib
 07fa55ea42e3d35ad7aaa6571781d819 *man/cov1.2012Fisher.Rd
 65e36d4cbaff1acf8e466bf93e90f612 *man/cov1.2015WL.Rd
-13b0b0554ee4f2e9a0f6097a3e5ffb5e *man/cov2.2012LC.Rd
+afd6163413b023dd2c3e0073830352a6 *man/cov2.2012LC.Rd
 ecc5b7167d1fa1957d0e4cc910d59a43 *man/cov2.2013CLX.Rd
 d62c1da140234f9db4ebd1af9c978a95 *man/cov2.2015WL.Rd
 1cf79a88e55dede6e08e9989d9e75d46 *man/cov2.mxPBF.Rd
@@ -91,7 +92,7 @@ f8fc2d4594346ecf9328b6e826e86424 *man/mean2.2004KY.Rd
 2b31a7b0a2c71ec2797427ef7cebed33 *man/mean2.2011LJW.Rd
 ad33a15c2f801383817814260efb1f47 *man/mean2.2014CLX.Rd
 664687fb8396cbc8b0cfcae80588c6eb *man/mean2.2014Thulin.Rd
-ac853f6b15ab888be424486393bf7a4a *man/mean2.mxPBF.Rd
+5ac12938088fd242d008a30e2c3a3b53 *man/mean2.mxPBF.Rd
 f2a0c4a5790efb68638e3e9708470471 *man/mean2.ttest.Rd
 199b82812813a51fd3bc936f434fead8 *man/meank.2007Schott.Rd
 b21454c8fc8d48dd47a5f6c21ff859cd *man/meank.2009ZX.Rd
@@ -110,6 +111,7 @@ be458d12901b636ac7ec6b2d15da6495 *man/norm.1972SF.Rd
 12d5273f44dcf9734650b24e494a92a7 *man/norm.1996AJB.Rd
 b7bf4212ed19c78afc79f4c026ba26c1 *man/norm.2008RJB.Rd
 a942ec528a5459cdd545ed75cbba7ef5 *man/sim1.2017Liu.Rd
+0fc5188da3ea126c27b0b64dcfa62199 *man/sim1.LRT.Rd
 9c54b0336bfc9fdeb41dfc4e67c81ca7 *man/sim2.2018HN.Rd
 0589cbb7d418d24fc9f274083d3209f1 *man/unif.2017YMi.Rd
 2f22668034cbdf37f1c12f209264d587 *man/unif.2017YMq.Rd
@@ -122,9 +124,9 @@ f991ef7d90f6bfc3ce636bc122fa1e33 *man/usek1d.Rd
 8b20ea8ae7dca9dce4cfd26915cabef9 *man/vark.1974BF.Rd
 5e3fb146673b23d3b6e4d3ae47d7df45 *src/Makevars
 5e3fb146673b23d3b6e4d3ae47d7df45 *src/Makevars.win
-f66d7b3d1d3a31eafb55e9d1a1aa91f6 *src/RcppExports.cpp
+aa2f23f2dc20eb544dfce07a0842bdc0 *src/RcppExports.cpp
 0c400625e39b37a70013210f23e31e1d *src/cpp_cov1_mxPBF.cpp
-9139ee94e98aff9ddf47532ff0ef06f6 *src/cpp_cov2_2012LC.cpp
+c1c8d57ba54f199e42999c99690794ac *src/cpp_cov2_2012LC.cpp
 84e91e5732cf2b2cb96f904347720cb3 *src/cpp_cov2_mxPBF.cpp
 d59db00ccc3ee73935e32b26ae4f4e39 *src/cpp_energy.cpp
 071de9e987894af53ff3891c973f8486 *src/cpp_eqdist_2014BG.cpp
