@@ -1,7 +1,7 @@
-4838ec619053855c96061940e5d54294 *DESCRIPTION
+e1f12e32928c9f2a4d1dafc5ce9ee1eb *DESCRIPTION
 346cee2351aae3dad0c120be0c94c202 *LICENSE
 5d1a8e8a7249a97dda603c4bb90ca7cb *NAMESPACE
-3c232817d929455cbcdffcc2b4ba9ea0 *NEWS.md
+402fda6063e93fadf4edb1e197e694b6 *NEWS.md
 e02de4a49e62c26eb285b87fb2e34aed *R/RcppExports.R
 26017d5e2ca6299957273c4771847020 *R/aux_checkers.R
 bf240e98c76f18e4495e50ffaa18f817 *R/aux_class.R
@@ -51,7 +51,7 @@ e508fe3f33b17bc86e59d56bf1b7ad39 *R/norm_1972SF.R
 f2e6e048d7ccb010d01fd30ddf3952a4 *R/norm_1980JB.R
 bdc361ab924f4573886468666df1d82f *R/norm_1996AJB.R
 9b014beb1616c341b9170de0833ad8be *R/norm_2008RJB.R
-45c2501778bcc99a21cd09015b8a11f7 *R/package-SHT.R
+853b07a17701ce86f0a2f21539b770ad *R/package-SHT.R
 cfa39ef275c6a0c87b92e78927158aab *R/sim1_2017Liu.R
 8fe71b60acd1d48696c809ec035b7888 *R/sim1_LRT.R
 54bfbc33c3f051f118edf72f147589a5 *R/sim2_2018HN.R
@@ -67,7 +67,7 @@ e1850ec9dc2d3e57205020dd6a5a5c09 *R/vark_1960Levene.R
 5698c1b04652e2be0677c3e101d606ca *R/vark_1974BF.R
 d254d20151e9dff23d6be72668b6492c *R/zzz.R
 70a59cc552a301772c3a071f14e20412 *R/zzz_test_edist.R
-db1e3ea65e064e03ebb11d23b98ceaff *build/partial.rdb
+c3cef8fb5bf76e03b3a94d7ba20e08f3 *build/partial.rdb
 d40c4d6854f2f484b9e98747abd4ccc6 *inst/REFERENCES.bib
 b8fde8a5c8d0e44c3c1c37adc03f2b3a *man/cov1.2012Fisher.Rd
 8d4c4f60264a00301b872e8f086b2de9 *man/cov1.2015WL.Rd
@@ -125,14 +125,14 @@ da36241bc8e0f7fb089b59a1f4762582 *man/useknd.Rd
 14830bed77fc388ec71a4bdaae7f7727 *man/vark.1937Bartlett.Rd
 1ac2d2d479db16d4e097c354a3e7291e *man/vark.1960Levene.Rd
 fbbf0046ec36e58380df3c905b489b7b *man/vark.1974BF.Rd
-5e3fb146673b23d3b6e4d3ae47d7df45 *src/Makevars
-5e3fb146673b23d3b6e4d3ae47d7df45 *src/Makevars.win
+e62585629948e7dd143efbad43c2a6eb *src/Makevars
+e62585629948e7dd143efbad43c2a6eb *src/Makevars.win
 b82f2e9b2aa25fd90e2b344d86d7251b *src/RcppExports.cpp
 0c400625e39b37a70013210f23e31e1d *src/cpp_cov1_mxPBF.cpp
 5435a651891400f455bde18052596722 *src/cpp_cov2_2012LC.cpp
 84e91e5732cf2b2cb96f904347720cb3 *src/cpp_cov2_mxPBF.cpp
 d59db00ccc3ee73935e32b26ae4f4e39 *src/cpp_energy.cpp
-071de9e987894af53ff3891c973f8486 *src/cpp_eqdist_2014BG.cpp
+afc37368778cf06a3f6cadb7e9b78805 *src/cpp_eqdist_2014BG.cpp
 a4164c38b1a6760d72881e841e4a869a *src/cpp_extras.cpp
 ab2420c24ae92d37651c339079e0f066 *src/cpp_extras.h
 69701392ddaa80b4179c1ccdeae382ec *src/cpp_mean2_2014CLX.cpp
